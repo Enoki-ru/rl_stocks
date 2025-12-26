@@ -1,0 +1,54 @@
+# --- Core Deep Learning (Universal) ---
+torch
+torchvision
+torchaudio
+gymnasium
+stable-baselines3[extra]
+# На Mac PyTorch использует MPS автоматически. 
+# На Windows/Linux подтягивает CUDA, если она установлена.
+
+# Для Windows и Linux (обычный tensorflow)
+tensorflow==2.15.0; sys_platform != 'darwin'
+
+# Для macOS (Intel и Apple Silicon)
+# Важно: фиксируем ту же версию 2.15.0
+tensorflow-macos==2.15.0; sys_platform == 'darwin'
+
+# Плагин ускорения только для Apple Silicon
+tensorflow-metal==1.1.0; sys_platform == 'darwin' and platform_machine == 'arm64'
+
+# --- Data Science & Analytics ---
+pandas
+polars
+numpy
+scipy
+scikit-learn
+bottleneck  # Ускорение операций в pandas
+
+# --- RL & Environments ---
+gymnasium[classic_control, box2d]  # Современный стандарт вместо старого Gym
+stable-baselines3[extra]           # Эталонные реализации алгоритмов RL (PPO, SAC, etc.)
+shimmy                             # Для совместимости версий
+
+# --- Financial Analysis ---
+yfinance                           # Загрузка котировок (Yahoo Finance)
+# pandas-ta                          # Технический анализ на базе Pandas
+# talib-binary                       # Библиотека индикаторов (TA-Lib)
+
+# --- Visualization ---
+matplotlib
+seaborn
+plotly
+# bokeh
+
+# --- Development & Notebooks ---
+jupyter
+ipykernel
+tqdm                               # Прогресс-бары для циклов обучения
+black                              # Форматирование кода
+ipywidgets                         # Интерактивные элементы в ноутбуках
+
+# --- Utils ---
+python-dotenv                      # Работа с .env (API ключи)
+pyyaml                             # Конфиг-файлы
+loguru                             # Продвинутое логирование
