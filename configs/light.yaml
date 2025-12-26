@@ -10,3 +10,11 @@ model:
   comission_on_buy: 0.001  # Комиссия брокера при покупке
   comission_on_sale: 0.001  # Комиссия брокера при продаже
   comission_on_new_day: 0.001  # Доп Комиссия следующего дня
+
+test_max_steps: 50
+max_steps: 1000000
+progress:
+  stocks_interval: [[5, 15], [5, 150]]
+  exp_days_interval: [[7, 7], [7, 90]]
+  history_days_interval: [[14, 30], [14, 60]]
+  capital_interval: [[1000, 5000], [5000, 200000]]
