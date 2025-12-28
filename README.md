@@ -8,6 +8,14 @@
 
 - [Stocks-Daily-Price (Hugging Face)](https://huggingface.co/datasets/paperswithbacktest/Stocks-Daily-Price/tree/main/data)
 
+Для работы с данными, все файлы из датасета (1-4 parquet файлы) предварительно закиньте в папку `data/raw/us_stocks`.
+- Папок изначально нет, нужно их создать самостоятельно
+    Нам нужны следующие файлы:
+    - `data/edit`
+    - `data/final`
+    - `data/raw`
+
+
 ### Venv
 
 ```

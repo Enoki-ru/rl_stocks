@@ -52,3 +52,5 @@ ipywidgets                         # Интерактивные элементы
 python-dotenv                      # Работа с .env (API ключи)
 pyyaml                             # Конфиг-файлы
 loguru                             # Продвинутое логирование
+pyarrow
+fastparquet
