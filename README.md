@@ -17,6 +17,7 @@ All
 ### Importing Data
 
 - We are using `find data -type d -exec touch {}/.gitkeep \;` to create all `.gitkeep` files inside `/data/` folder
+- To adding `.gitkeep` to repo, we also using command `git add -f data/**/.gitkeep`
 - To work with the data, pre-upload all files from **Sources** to the `data/raw/<dataset_name>` folder.
 
 ### How to install venv
