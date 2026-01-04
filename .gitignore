@@ -31,7 +31,11 @@ venv*/
 /venv*/
 
 # Data folders
-**/data/
+# 1. Запрещаем всё внутри папки data
+data/**/*
+
+# 2. Делаем исключение для файлов .gitkeep (или других скрытых файлов-маркеров)
+!data/**/.gitkeep
 
 # Python temporary files
 *.pyc
