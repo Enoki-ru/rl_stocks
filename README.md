@@ -1,8 +1,11 @@
 ### Description
+**Hello, my lovely reader!**
+This project is designed to explore the capabilities of `SL` + `RL` and their collaboration in Deep Machine Learning.
 
-This project is designed to explore the capabilities of `SL` + `RL` and their collaboration capabilities.
-The project is an attempt to create an AI more advanced than humanity.
+The project is an attempt to create an AI, more advanced than humanity.
 As we know, it is the `RL` models that are capable of learning, and, in fact, they are able to learn indefinitely, they can even become smarter than humans.
+
+**I hope, that `RL` can be smarter than humans.**
 
 ### Useful Links
 
@@ -10,8 +13,10 @@ As we know, it is the `RL` models that are capable of learning, and, in fact, th
 
 ### Sources
 
-All 
 1. `data/raw/us_stocks` – [Stocks-Daily-Price (Hugging Face)](https://huggingface.co/datasets/paperswithbacktest/Stocks-Daily-Price/tree/main/data)
+
+![](/docs/readme_pics/stock_prices_example.png)
+This dataset includes daily stats for 7000+ US Stocks
 
 
 ### Importing Data
@@ -19,6 +24,8 @@ All
 - We are using `find data -type d -exec touch {}/.gitkeep \;` to create all `.gitkeep` files inside `/data/` folder
 - To adding `.gitkeep` to repo, we also using command `git add -f data/**/.gitkeep`
 - To work with the data, pre-upload all files from **Sources** to the `data/raw/<dataset_name>` folder.
+
+---
 
 ### How to install venv
 
@@ -34,6 +41,7 @@ source ml_env/bin/activate
 pip3.11 install -r reqs.req.txt
 python -m ipykernel install --user --name=project-venv --display-name "ML-torch env"
 ```
+---
 
 #### How to change generate req.txt
 
