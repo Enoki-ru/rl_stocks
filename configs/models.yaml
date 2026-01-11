@@ -11,7 +11,8 @@ model_light:
   commission_on_sale: 0.001  # Комиссия брокера при продаже
   commission_on_new_day: 0.001  # Доп Комиссия следующего дня
   min_date: "1999-01-01"
-  testing_dates_interval: ["2024-12-01", "2025-12-22"]
+  max_date: "2025-12-19"
+  testing_dates_interval: ["2024-12-01", "2025-12-19"]
   test_max_steps: 50
   max_steps: 1000000
   progress:
